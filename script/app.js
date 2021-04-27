@@ -21,14 +21,13 @@ const render = () => {
     })
 }
 
-const startGame = async () => {
+const startGame = async() => {
     wordCount = document.getElementById('test5').value
     console.log(wordCount)
     const puzzle = await getPuzzle(wordCount)
-    game1 = new Hangman(puzzle, 50)
+    game1 = new Hangman(puzzle, 5)
     render()
 }
 
 document.querySelector('#reset').addEventListener('click', startGame)
 startGame()
-
