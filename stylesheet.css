@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #2B292E;
+    color: #fafafa;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+}
+
+.navbar{
+    position: absolute;
+    left: 10%;
+    top: 60px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+
+a:hover {
+    color: #FF6A67;
+}
+
+.li{
+    list-style-type: none;
+}
+
+.box {
+    background-color: #64677D;
+    border-radius: 5px;
+    width: 50%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+input[type="range"] {
+    border: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    background-color: #5F3A87;
+  }
+  input[type=range]::-moz-range-thumb {
+    background-color: #5F3A87;
+  }
+  input[type=range]::-ms-thumb {
+    background-color: #5F3A87;
+  }
+
+  /***** These are to edit the thumb and the text inside the thumb *****/
+  input[type=range] + .thumb {
+    background-color: #dedede;
+    font-weight: 500;
+  }
+  input[type=range] + .thumb.active .value {
+    color: rgb(29, 31, 182);
+  }
+
+.space {
+    border-bottom: 1px solid #534f59;
+}
+
+.form {
+    width: 100%;
+}
+span {
+    display: inline-block;
+    font-size: 2rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    margin: 0 .1rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 2.4rem;
+}
+
+p {
+    font-weight: 300;
+    margin-bottom: .8rem;
+}
+.level {
+    transition: background .3s ease, color .3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+.puzzle {
+    display: flex;
+    margin-bottom: 4.8rem;
+}
+
+.button {
+    background: #7044a0;
+    border: none;
+    border-bottom: 2px solid #603a88;
+    cursor: pointer;
+    color: white;
+    padding: .8rem;
+    transition: background .3s ease, color .3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+
+}
+
+.button:hover {
+    background: #5F3A87;
+}
+
+
